@@ -63,13 +63,13 @@ then start VR Iris again.
 | **CPU** | 4 cores / 4 threads, e.g. Intel i5-4590 / Ryzen 5 1500X | 8 threads or more, e.g. Ryzen 5 3600 / i5-10400 or newer | ✔ Ryzen 7 3700X (8 cores / 16 threads) |
 | **RAM** | 8 GB | 16 GB | ✔ 32 GB |
 | **Disk** | 1.5 GB free (the game is 0.5 GB, plus the shader cache and the setup file) | SSD | ✔ |
-| **Windows** | Windows 10 22H2 (64-bit) | Windows 11 | ✔ Zeke's PC · ✔ a Windows 10 Home 22H2 test VM: install, private network, desktop mode |
+| **Windows** | Windows 10 22H2 (64-bit) | Windows 10 22H2 or Windows 11 | ✔ Zeke's PC (Windows 10 22H2) · ✔ a Windows 10 Home 22H2 test VM: install, private network, desktop mode · Windows 11: **not tested yet** |
 | **Headset** | any OpenXR PC-VR headset: Quest 2/3/3S/Pro via Link, Air Link or Virtual Desktop; Index; Vive; Pico | Quest 3 on a USB-3 Link cable or Wi-Fi 6 | ✔ Zeke's headset (daily play) |
 | **Desktop mode** (no headset) | any GPU with Vulkan 1.0, Direct3D 12 or OpenGL 3.3 (integrated graphics are fine) | | ✔ a VM with no GPU at all (software OpenGL, slow but works) |
 
 **Measured or estimated:**
 
-- **Measured on Zeke's PC** (Ryzen 7 3700X, 16 threads, 32 GB, RTX 3060, Windows 11), using our automated client test
+- **Measured on Zeke's PC** (Ryzen 7 3700X, 16 threads, 32 GB, RTX 3060, Windows 10 22H2), using our automated client test
   (`vr.sh clientsmoke`, 3 runs, this release's build):
   - The loading screen is up after **9 s** and the world is ready after **27–28 s**.
   - Desktop mode then holds **~185 fps** at the spawn, with **~6 ms** of game logic and **~3 ms** of physics per frame.
