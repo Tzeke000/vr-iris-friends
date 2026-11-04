@@ -1,5 +1,7 @@
 # VR Iris
 
+**⬇ Download: [VRIris-Setup.exe — latest release](https://github.com/Tzeke000/vr-iris-friends/releases/latest)** (on the repo page it's under **Releases** on the right side; on a phone, scroll down past the files).
+
 VR Iris is a small, private, social VR world built in Godot 4.7. You and a few friends meet in a temple and a city, with
 physics you can grab and throw, voice chat, custom avatars and Iris (an AI who lives there). It runs on Windows PCs with a
 PC-VR headset. There's also a desktop (mouse and keyboard) mode for PCs without one.
@@ -18,7 +20,9 @@ You can only get in **by invitation**. The game server sits behind a private net
    - **"Smart App Control blocked this app"** (Windows 11 only): there's no Run anyway button. This feature blocks every
      unsigned program and has no per-app exception. Check *Windows Security ▸ App & browser control ▸ Smart App Control*.
      Most PCs that were upgraded from Windows 10 have it **Off** already. If yours is **On** or **Evaluation**, ask Zeke
-     before you change it: on older Windows 11 builds, switching it off can't be undone without resetting Windows.
+     before you change it. ⚠ **Turning Smart App Control OFF is one-way:** Windows says that once it's off, it can't be
+     turned back on without reinstalling Windows. It's a real security feature, so some people will want to keep it —
+     that's a fair choice, but then this setup can't run on that PC.
 3. **Click through the setup:** Welcome → Folder → **Your invite** (filled in from your file) → **Private network**.
    - The private-network step installs **WireGuard**, the official free VPN app from wireguard.com, and makes **your own
      key on your PC**.
