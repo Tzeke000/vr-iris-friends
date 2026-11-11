@@ -1,20 +1,20 @@
-# VR Iris
+# LUMEN
 
-**⬇ Download: [VRIris-Setup.exe — latest release](https://github.com/Tzeke000/vr-iris-friends/releases/latest)** (on the repo page it's under **Releases** on the right side; on a phone, scroll down past the files).
+**⬇ Download: [LUMEN-Setup.exe — latest release](https://github.com/Tzeke000/vr-iris-friends/releases/latest)** (on the repo page it's under **Releases** on the right side; on a phone, scroll down past the files).
 
-VR Iris is a small, private, social VR world built in Godot 4.7. You and a few friends meet in a temple and a city, with
+LUMEN is a small, private, social VR world built in Godot 4.7. You and a few friends meet in a temple and a city, with
 physics you can grab and throw, voice chat, custom avatars and Iris (an AI who lives there). It runs on Windows PCs with a
 PC-VR headset. There's also a desktop (mouse and keyboard) mode for PCs without one.
 
 You can only get in **by invitation**. The game server sits behind a private network, so you need two things:
-`VRIris-Setup.exe` from this release, and **your own invite file** (`yourname.irisinvite`), which Zeke sends you privately.
+`LUMEN-Setup.exe` from this release, and **your own invite file** (`yourname.irisinvite`), which Zeke sends you privately.
 
 ---
 
 ## Install (about 5 minutes)
 
-1. **Put both files in one folder**, e.g. your Downloads: `VRIris-Setup.exe` and your `.irisinvite` file.
-2. **Run `VRIris-Setup.exe`.**
+1. **Put both files in one folder**, e.g. your Downloads: `LUMEN-Setup.exe` and your `.irisinvite` file.
+2. **Run `LUMEN-Setup.exe`.**
    - **"Windows protected your PC" (blue box):** click **More info** and then **Run anyway**. The setup isn't code-signed
      (signing certificates cost money each year), so Windows doesn't recognise it yet. You'll see this once per release.
    - **"Smart App Control blocked this app"** (Windows 11 only): there's no Run anyway button. This feature blocks every
@@ -29,21 +29,21 @@ You can only get in **by invitation**. The game server sits behind a private net
    - Windows asks **once** for administrator permission. The tunnel only carries traffic to the game server. The rest of
      your internet is untouched.
 4. **"Send this code to Zeke":** setup shows a short code and has a **Copy** button. It's also saved on your desktop as
-   `VR Iris - send this code to Zeke.txt`.
+   `LUMEN - send this code to Zeke.txt`.
    - The code is safe to send anywhere (Discord, text). It's only the *public* half of your key; the secret half never
      leaves your PC.
    - Until Zeke has added it, the game says **"waiting for Zeke to approve your key"** and keeps retrying on its own. You
      can look around offline in the meantime.
-5. **Finish → Start VR Iris.** The first start asks your name, avatar, height and comfort options (turning, movement) and
+5. **Finish → Start LUMEN.** The first start asks your name, avatar, height and comfort options (turning, movement) and
    shows the controller layout. Then it joins the temple.
 
-Everything installs for **your Windows user only**, in `%LOCALAPPDATA%\Programs\VR Iris`. You get a desktop shortcut and
+Everything installs for **your Windows user only**, in `%LOCALAPPDATA%\Programs\LUMEN`. You get a desktop shortcut and
 Start-menu entries: the game, desktop mode, your avatars folder and Uninstall. To uninstall, use *Settings ▸ Apps* or the
 Start-menu entry.
 
 ### Before you put the headset on
 
-VR Iris talks to your headset through **OpenXR**. On Windows, **one** VR app is the "OpenXR runtime" at a time, and the
+LUMEN talks to your headset through **OpenXR**. On Windows, **one** VR app is the "OpenXR runtime" at a time, and the
 setup's last page tells you which one your PC has.
 
 | Headset | Start this first | Make it the OpenXR runtime |
@@ -54,7 +54,7 @@ setup's last page tells you which one your PC has.
 | Windows Mixed Reality | not supported: Microsoft removed it in Windows 11 24H2 | |
 
 If no headset is found, the game starts in **desktop mode** and says what to fix. Start the VR app, connect the headset,
-then start VR Iris again.
+then start LUMEN again.
 
 ---
 
@@ -80,7 +80,7 @@ then start VR Iris again.
   - In VR this PC runs the **high** preset at **90 Hz**. That comes from Zeke's daily play, not from this automated test.
 - **Estimated, not measured:** everything else in the minimum and recommended columns. We have no GTX 1060, AMD or Intel
   card to test on. The estimates come from the published minimums of comparable PC-VR games and runtimes (table below),
-  scaled to how heavy VR Iris is on the RTX 3060.
+  scaled to how heavy LUMEN is on the RTX 3060.
 - **Meta Quest Link has its own GPU list** (link in the sources). It supports NVIDIA RTX 20/30/40/50; check the list for
   AMD cards. It does **not** support Intel Arc, workstation cards, the GTX 1050 Ti or the RX 560, and "doesn't recommend" the
   laptop RTX 3050 / 3050 Ti. With an unsupported card, use **Virtual Desktop** or SteamVR instead.
@@ -116,16 +116,16 @@ You can change any of it in *Settings ▸ Graphics*. Once you've changed somethi
 
 | Problem | What to do |
 |---|---|
-| **"waiting for Zeke to approve your key"** | Send Zeke the code from `VR Iris - send this code to Zeke.txt` on your desktop (also in `tools\my_public_key.txt` in the game folder). The game connects by itself once it's added. If it **used to work** and now says *"the temple isn't answering"*, the server is probably just offline. |
+| **"waiting for Zeke to approve your key"** | Send Zeke the code from `LUMEN - send this code to Zeke.txt` on your desktop (also in `tools\my_public_key.txt` in the game folder). The game connects by itself once it's added. If it **used to work** and now says *"the temple isn't answering"*, the server is probably just offline. |
 | **Game runs in desktop mode, but you have a headset** | Start your VR app first and make it the OpenXR runtime (see the table above), then restart the game. |
 | **The loading screen takes long** | The first start compiles shaders (up to a minute or two on slower PCs) and later starts are quicker. If it says *"Slower than usual"*, it lists what it's doing. |
-| **Frozen / hangs** | Press **F9** for the debug panel and **F10** to copy diagnostics (they go to the clipboard and into a file in `%APPDATA%\Godot\app_userdata\VR Iris`), then paste them to Zeke. If a start freezes, the next start switches to the **Direct3D 12** renderer on its own and the debug panel says so. |
+| **Frozen / hangs** | Press **F9** for the debug panel and **F10** to copy diagnostics (they go to the clipboard and into a file in `%APPDATA%\Godot\app_userdata\LUMEN`), then paste them to Zeke. If a start freezes, the next start switches to the **Direct3D 12** renderer on its own and the debug panel says so. |
 | **Parts of the world invisible or flickering (AMD)** | A known AMD Vulkan driver bug: *Settings ▸ Graphics ▸ Renderer → DirectX 12*, then restart. Updating the AMD driver also helps. |
 | **Black window or crash at the first start** | Update your graphics driver from nvidia.com, amd.com or intel.com. Windows Update's driver is often old. If Vulkan can't start at all, the game tries Direct3D 12 and then OpenGL by itself. |
 | **Laptop runs badly** | Plug in the charger and set the Windows power mode to *Best performance*. The game already asks for the gaming GPU, not the integrated one. |
 | **Antivirus says it's a virus** | Small unsigned installers and Godot games sometimes get flagged by mistake. The files come only from this release page, and the `.sha256` file next to Setup lets you check yours. Tell Zeke which antivirus flagged it, and we'll report the false positive. |
 | **The private network step failed** | Run Setup again with your invite file; it keeps your key. The reason is in `tools\wg_last.txt` in the game folder (no secrets in it). Other VPN apps can get in the way, so pause them during setup. |
-| **Firewall asks about VR Iris** | The game only connects outward, so it doesn't need incoming access. Either answer is fine. |
+| **Firewall asks about LUMEN** | The game only connects outward, so it doesn't need incoming access. Either answer is fine. |
 | **Reinstalling** | Uninstalling asks whether to remove the private-network tunnel. Say **No** if you'll reinstall: removing it deletes your key, and Zeke would have to approve a new code. |
 
 **Not needed:** no Visual C++ or DirectX redistributable and no .NET. The game is a single Godot 4.7 executable with two
